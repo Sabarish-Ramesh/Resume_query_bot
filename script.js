@@ -20,16 +20,16 @@ var contactString = `<div class='social'>
 var resumeString = `<img src='images/resumeThumbnail.png' class='resumeThumbnail'>
                         <div class='downloadSpace'><div class='pdfname'>
                             <img src='images/pdf.png'>
-                                <label>Vinayak Resume.pdf</label>
-                                </div><a href='assets/Vinayak Patil&#39;s Resume.pdf' download='Vinayak_Patil_Resume.pdf'>
+                                <label>Sabarish Ramesh Resume.pdf</label>
+                                </div><a href='assets/21ITR092-resume.pdf' download='Sabarish_Ramesh.pdf'>
                                 <img class='download' src='images/downloadIcon.svg'></a></div>`;
 var addressString = `<div class='mapview'>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3912.826182806128!2d77.6044578!3d11.2741843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96d7810fe32d5%3A0x85cf49c5b26fb72e!2sKongu%20Engineering%20College!5e0!3m2!1sen!2sin!4v1725162840063!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d730.2877623285725!2d77.88595931231514!3d11.06333189167394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1725177473880!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <label class='add'>
                         <address>
-                            KEC<br>
-                            Perundurai, Erode, Tamil Nadu, INDIA 638060
+                            Salaipudhur<br>
+                            No:10,salaipudhur main road, Erode district, Tamil Nadu, INDIA 638151
                         </address>
                     </label`
 function startFunction() {
@@ -153,6 +153,9 @@ function waitAndResponce(inputText) {
 
         case "address":
             sendTextMessage(addressString);
+            break;
+        case "hello":
+            sendTextMessage("HI there!!<br>Type<span class='bold'>'Help' </span>to know more");
             break;
         case "clear":
             clearChat();
